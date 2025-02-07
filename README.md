@@ -55,6 +55,6 @@ The **Smart Grocery and Expense Tracker** is designed to help users efficiently 
 ---
   
 
-## Work Flow
+## Work Flow Images
 
 ![Layout Image](./pen-paper-wireframe.svg)
