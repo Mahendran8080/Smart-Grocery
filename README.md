@@ -2,4 +2,4 @@
 
 ## Work Flow
 
-<img src="pen-paper-wireframe.svg"></img>
+![Layout Image](./pen-paper-wireframe.svg)
