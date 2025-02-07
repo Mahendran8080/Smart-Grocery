@@ -1,0 +1,108 @@
+<svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background - slightly off-white paper color -->
+    <rect width="1000" height="800" fill="#fafaf8"/>
+    
+    <!-- Grid lines to simulate notebook paper -->
+    <g stroke="#e6e6e6" stroke-width="1">
+        <line x1="0" y1="20" x2="1000" y2="20" />
+        <line x1="0" y1="40" x2="1000" y2="40" />
+        <line x1="0" y1="60" x2="1000" y2="60" />
+        <line x1="0" y1="80" x2="1000" y2="80" />
+        <line x1="40" y1="0" x2="40" y2="800" stroke="#ff9999" opacity="0.2"/>
+    </g>
+
+    <!-- Login Screen -->
+    <g transform="translate(50, 50)">
+        <path d="M10,10 L200,10 L200,200 L10,200 Z" fill="none" stroke="#333" stroke-width="2" style="stroke-linecap:round;stroke-linejoin:round"/>
+        <text x="15" y="30" font-family="Comic Sans MS" fill="#333">Login Screen</text>
+        <path d="M30,70 L180,70" stroke="#666" stroke-width="2"/>
+        <text x="35" y="65" font-family="Comic Sans MS" font-size="12" fill="#666">Username</text>
+        <path d="M30,120 L180,120" stroke="#666" stroke-width="2"/>
+        <text x="35" y="115" font-family="Comic Sans MS" font-size="12" fill="#666">Password</text>
+        <path d="M30,160 L180,160" stroke="#333" stroke-width="2" style="stroke-linecap:round"/>
+        <text x="90" y="155" font-family="Comic Sans MS" font-size="12" fill="#333">Login Button</text>
+    </g>
+
+    <!-- Dashboard -->
+    <g transform="translate(280, 50)">
+        <path d="M10,10 L400,10 L400,300 L10,300 Z" fill="none" stroke="#333" stroke-width="2" style="stroke-linecap:round;stroke-linejoin:round"/>
+        <text x="15" y="30" font-family="Comic Sans MS" fill="#333">Dashboard</text>
+        
+        <!-- Stats boxes -->
+        <path d="M30,50 L120,50 L120,100 L30,100 Z" fill="none" stroke="#666" stroke-width="2"/>
+        <path d="M140,50 L230,50 L230,100 L140,100 Z" fill="none" stroke="#666" stroke-width="2"/>
+        <path d="M250,50 L340,50 L340,100 L250,100 Z" fill="none" stroke="#666" stroke-width="2"/>
+        
+        <!-- Charts -->
+        <path d="M30,120 L230,120 L230,280 L30,280 Z" fill="none" stroke="#666" stroke-width="2"/>
+        <path d="M40,150 L220,150 M40,200 L220,200 M40,250 L220,250" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+        
+        <!-- Pie chart -->
+        <circle cx="300" cy="200" r="60" fill="none" stroke="#666" stroke-width="2"/>
+        <path d="M300,200 L300,140 A60,60 0 0,1 352,230 Z" fill="none" stroke="#666" stroke-width="2"/>
+    </g>
+
+    <!-- Grocery List -->
+    <g transform="translate(50, 380)">
+        <path d="M10,10 L250,10 L250,350 L10,350 Z" fill="none" stroke="#333" stroke-width="2" style="stroke-linecap:round;stroke-linejoin:round"/>
+        <text x="15" y="30" font-family="Comic Sans MS" fill="#333">Grocery List</text>
+        
+        <!-- Add item bar -->
+        <path d="M30,50 L230,50" stroke="#666" stroke-width="2"/>
+        <circle cx="220" cy="50" r="8" stroke="#666" stroke-width="2" fill="none"/>
+        <path d="M216,50 L224,50 M220,46 L220,54" stroke="#666" stroke-width="2"/>
+        
+        <!-- List items -->
+        <g stroke="#666" stroke-width="1">
+            <path d="M30,80 L230,80"/>
+            <path d="M30,120 L230,120"/>
+            <path d="M30,160 L230,160"/>
+            <path d="M30,200 L230,200"/>
+        </g>
+    </g>
+
+    <!-- Expense Tracker -->
+    <g transform="translate(320, 380)">
+        <path d="M10,10 L360,10 L360,350 L10,350 Z" fill="none" stroke="#333" stroke-width="2" style="stroke-linecap:round;stroke-linejoin:round"/>
+        <text x="15" y="30" font-family="Comic Sans MS" fill="#333">Expense Tracker</text>
+        
+        <!-- Table header -->
+        <path d="M30,50 L340,50" stroke="#666" stroke-width="2"/>
+        
+        <!-- Table rows -->
+        <g stroke="#666" stroke-width="1">
+            <path d="M30,90 L340,90"/>
+            <path d="M30,130 L340,130"/>
+            <path d="M30,170 L340,170"/>
+            <path d="M30,210 L340,210"/>
+            <path d="M30,250 L340,250"/>
+        </g>
+        
+        <!-- Columns -->
+        <g stroke="#666" stroke-width="1">
+            <path d="M100,50 L100,290"/>
+            <path d="M200,50 L200,290"/>
+            <path d="M270,50 L270,290"/>
+        </g>
+    </g>
+
+    <!-- Annotations -->
+    <g font-family="Comic Sans MS" font-size="12" fill="#666">
+        <text x="720" y="50">✓ User Authentication</text>
+        <text x="720" y="80">✓ Expense Categories</text>
+        <text x="720" y="110">✓ Shopping Lists</text>
+        <text x="720" y="140">✓ Analytics Dashboard</text>
+        <text x="720" y="170">✓ Monthly Reports</text>
+    </g>
+
+    <!-- Arrows and connections -->
+    <path d="M210,150 C240,150 260,150 270,150" stroke="#666" stroke-width="1" fill="none" marker-end="url(#arrow)"/>
+    <path d="M210,450 C240,450 260,450 270,450" stroke="#666" stroke-width="1" fill="none" marker-end="url(#arrow)"/>
+
+    <!-- Arrow marker -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+        </marker>
+    </defs>
+</svg>
