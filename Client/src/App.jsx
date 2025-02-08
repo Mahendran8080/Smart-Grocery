@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Home from './Components/homepage'
 
 import './App.css'
 
@@ -7,7 +8,11 @@ function App() {
 
   return (
     <>
-      <h1>Hello World bro!</h1>
+      <h1>Monkey.D.Luffy!</h1>
+      
+
+      <Home></Home>
+
     </>
   )
 }
